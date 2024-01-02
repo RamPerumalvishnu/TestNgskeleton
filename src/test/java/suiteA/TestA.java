@@ -19,7 +19,8 @@ public class TestA extends testbase{
 		//Assert.assertTrue(15>12, "Condition Failed");
 		//log(uname+"--------"+password);
 		if(!"Title1".equals("Title2"))
-		{
+		{		
+			System.out.println("Title do not match");
 			System.out.println("Title do not match");
 			softAssert("Title Do not match");
 			
