@@ -10,7 +10,7 @@ import com.beust.jcommander.Parameter;
 import dataProvider.TestDataProvider;
 import testSuiteBase.testbase;
 
-public class TestA extends testbase{
+public class TestAAA extends testbase{
 	
 	@Test (groups ={"sanity","browserGroup1"},dataProviderClass = TestDataProvider.class,dataProvider = "datasuiteA")
 	public void testA(String browserName,String uname, String password) throws InterruptedException {

@@ -103,7 +103,7 @@ public class TestDataProvider {
 		{
 			data=new Object[2][3];
 			//Row 1
-			data[0][1]=browsers[0];
+			data[0][1]=browsers[1];
 			data[0][1]="U1";
 			data[0][2]="P1";
 			//Row 2
