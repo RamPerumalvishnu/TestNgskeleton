@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-31T16:30:26 IST" name="Suite" finished-at="2023-12-31T16:30:26 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Suite -->
+  <suite started-at="2023-12-31T16:30:06 IST" name="SuiteA" finished-at="2023-12-31T16:30:10 IST" duration-ms="4482">
+    <groups>
+      <group name="browserGroup1">
+        <method signature="TestA.testA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestA@10e92f8f]" name="testA" class="suiteA.TestA"/>
+        <method signature="TestAA.testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c]" name="testAA" class="suiteA.TestAA"/>
+      </group> <!-- browserGroup1 -->
+      <group name="smoke">
+        <method signature="TestAA.testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c]" name="testAA" class="suiteA.TestAA"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestA.testA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestA@10e92f8f]" name="testA" class="suiteA.TestA"/>
+        <method signature="TestAA.testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c]" name="testAA" class="suiteA.TestAA"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2023-12-31T16:30:06 IST" name="TestA" finished-at="2023-12-31T16:30:10 IST" duration-ms="4444">
+      <class name="suiteA.TestA">
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteA.TestA@10e92f8f]" started-at="2023-12-31T16:30:06 IST" name="init" finished-at="2023-12-31T16:30:06 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c98290c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestA.testA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestA@10e92f8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestA@10e92f8f]" started-at="2023-12-31T16:30:06 IST" name="testA" data-provider="datasuiteA" finished-at="2023-12-31T16:30:08 IST" duration-ms="2023" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Title Do not match,
+Failing and stopping the test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Title Do not match,
+Failing and stopping the test case
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testSuiteBase.testbase.failandstoptest(testbase.java:67)
+at suiteA.TestA.testA(TestA.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteA.TestA@10e92f8f]" started-at="2023-12-31T16:30:08 IST" name="quit" finished-at="2023-12-31T16:30:08 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteA.TestA@10e92f8f]" started-at="2023-12-31T16:30:08 IST" name="init" finished-at="2023-12-31T16:30:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c98290c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestA.testA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestA@10e92f8f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestA@10e92f8f]" started-at="2023-12-31T16:30:08 IST" name="testA" data-provider="datasuiteA" finished-at="2023-12-31T16:30:10 IST" duration-ms="2012" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Title Do not match,
+Failing and stopping the test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Title Do not match,
+Failing and stopping the test case
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testSuiteBase.testbase.failandstoptest(testbase.java:67)
+at suiteA.TestA.testA(TestA.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteA.TestA@10e92f8f]" started-at="2023-12-31T16:30:10 IST" name="quit" finished-at="2023-12-31T16:30:10 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteA.TestA -->
+    </test> <!-- TestA -->
+    <test started-at="2023-12-31T16:30:10 IST" name="TestAA" finished-at="2023-12-31T16:30:10 IST" duration-ms="23">
+      <class name="suiteA.TestAA">
+        <test-method signature="testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c]" started-at="2023-12-31T16:30:10 IST" name="testAA" data-provider="datasuiteA" finished-at="2023-12-31T16:30:10 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAA -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteA.TestAA@7193666c]" started-at="2023-12-31T16:30:10 IST" name="init" finished-at="2023-12-31T16:30:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51df223b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestAA.testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteA.TestAA@7193666c]" started-at="2023-12-31T16:30:10 IST" name="quit" finished-at="2023-12-31T16:30:10 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c]" started-at="2023-12-31T16:30:10 IST" name="testAA" data-provider="datasuiteA" finished-at="2023-12-31T16:30:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAA -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteA.TestAA@7193666c]" started-at="2023-12-31T16:30:10 IST" name="init" finished-at="2023-12-31T16:30:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51df223b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestAA.testAA(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteA.TestAA@7193666c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteA.TestAA@7193666c]" started-at="2023-12-31T16:30:10 IST" name="quit" finished-at="2023-12-31T16:30:10 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteA.TestAA -->
+    </test> <!-- TestAA -->
+  </suite> <!-- SuiteA -->
+  <suite started-at="2023-12-31T16:30:10 IST" name="SuiteB" finished-at="2023-12-31T16:30:18 IST" duration-ms="8116">
+    <groups>
+      <group name="browserGroup1">
+        <method signature="TestBB.testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b]" name="testBB" class="suiteB.TestBB"/>
+      </group> <!-- browserGroup1 -->
+      <group name="browserGroup2">
+        <method signature="TestB.testB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestB@56620197]" name="testB" class="suiteB.TestB"/>
+      </group> <!-- browserGroup2 -->
+      <group name="smoke">
+        <method signature="TestB.testB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestB@56620197]" name="testB" class="suiteB.TestB"/>
+        <method signature="TestBB.testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b]" name="testBB" class="suiteB.TestBB"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestBB.testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b]" name="testBB" class="suiteB.TestBB"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2023-12-31T16:30:10 IST" name="TestB" finished-at="2023-12-31T16:30:14 IST" duration-ms="4062">
+      <class name="suiteB.TestB">
+        <test-method signature="testB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestB@56620197]" started-at="2023-12-31T16:30:10 IST" name="testB" data-provider="datasuiteB" finished-at="2023-12-31T16:30:12 IST" duration-ms="2007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteB.TestB@56620197]" started-at="2023-12-31T16:30:10 IST" name="init" finished-at="2023-12-31T16:30:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4204541c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestB.testB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestB@56620197] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteB.TestB@56620197]" started-at="2023-12-31T16:30:12 IST" name="quit" finished-at="2023-12-31T16:30:12 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteB.TestB@56620197]" started-at="2023-12-31T16:30:12 IST" name="init" finished-at="2023-12-31T16:30:12 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4204541c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestB.testB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestB@56620197] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestB@56620197]" started-at="2023-12-31T16:30:12 IST" name="testB" data-provider="datasuiteB" finished-at="2023-12-31T16:30:14 IST" duration-ms="2014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteB.TestB@56620197]" started-at="2023-12-31T16:30:14 IST" name="quit" finished-at="2023-12-31T16:30:14 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteB.TestB -->
+    </test> <!-- TestB -->
+    <test started-at="2023-12-31T16:30:14 IST" name="TestBB" finished-at="2023-12-31T16:30:18 IST" duration-ms="4052">
+      <class name="suiteB.TestBB">
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteB.TestBB@6973b51b]" started-at="2023-12-31T16:30:14 IST" name="init" finished-at="2023-12-31T16:30:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60fa3495]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestBB.testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b]" started-at="2023-12-31T16:30:14 IST" name="testBB" data-provider="datasuiteB" finished-at="2023-12-31T16:30:16 IST" duration-ms="2010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBB -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteB.TestBB@6973b51b]" started-at="2023-12-31T16:30:16 IST" name="quit" finished-at="2023-12-31T16:30:16 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteB.TestBB@6973b51b]" started-at="2023-12-31T16:30:16 IST" name="init" finished-at="2023-12-31T16:30:16 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60fa3495]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestBB.testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testBB(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteB.TestBB@6973b51b]" started-at="2023-12-31T16:30:16 IST" name="testBB" data-provider="datasuiteB" finished-at="2023-12-31T16:30:18 IST" duration-ms="2016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBB -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteB.TestBB@6973b51b]" started-at="2023-12-31T16:30:18 IST" name="quit" finished-at="2023-12-31T16:30:18 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteB.TestBB -->
+    </test> <!-- TestBB -->
+  </suite> <!-- SuiteB -->
+  <suite started-at="2023-12-31T16:30:18 IST" name="SuiteC" finished-at="2023-12-31T16:30:26 IST" duration-ms="8115">
+    <groups>
+      <group name="browserGroup1">
+        <method signature="TestC.testC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestC@6e171cd7]" name="testC" class="suiteC.TestC"/>
+      </group> <!-- browserGroup1 -->
+      <group name="browserGroup2">
+        <method signature="TestCC.testCC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestCC@384ad17b]" name="testCC" class="suiteC.TestCC"/>
+      </group> <!-- browserGroup2 -->
+      <group name="smoke">
+        <method signature="TestCC.testCC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestCC@384ad17b]" name="testCC" class="suiteC.TestCC"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestC.testC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestC@6e171cd7]" name="testC" class="suiteC.TestC"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2023-12-31T16:30:18 IST" name="TestC" finished-at="2023-12-31T16:30:22 IST" duration-ms="4053">
+      <class name="suiteC.TestC">
+        <test-method signature="testC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestC@6e171cd7]" started-at="2023-12-31T16:30:18 IST" name="testC" data-provider="datasuiteC" finished-at="2023-12-31T16:30:20 IST" duration-ms="2004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteC.TestC@6e171cd7]" started-at="2023-12-31T16:30:18 IST" name="init" finished-at="2023-12-31T16:30:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@29a60c27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestC.testC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestC@6e171cd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteC.TestC@6e171cd7]" started-at="2023-12-31T16:30:20 IST" name="quit" finished-at="2023-12-31T16:30:20 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteC.TestC@6e171cd7]" started-at="2023-12-31T16:30:20 IST" name="init" finished-at="2023-12-31T16:30:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@29a60c27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestC.testC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestC@6e171cd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestC@6e171cd7]" started-at="2023-12-31T16:30:20 IST" name="testC" data-provider="datasuiteC" finished-at="2023-12-31T16:30:22 IST" duration-ms="2013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteC.TestC@6e171cd7]" started-at="2023-12-31T16:30:22 IST" name="quit" finished-at="2023-12-31T16:30:22 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteC.TestC -->
+    </test> <!-- TestC -->
+    <test started-at="2023-12-31T16:30:22 IST" name="TestCC" finished-at="2023-12-31T16:30:26 IST" duration-ms="4057">
+      <class name="suiteC.TestCC">
+        <test-method signature="testCC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestCC@384ad17b]" started-at="2023-12-31T16:30:22 IST" name="testCC" data-provider="datasuiteC" finished-at="2023-12-31T16:30:24 IST" duration-ms="2016" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCC -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteC.TestCC@384ad17b]" started-at="2023-12-31T16:30:22 IST" name="init" finished-at="2023-12-31T16:30:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1ca25c47]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestCC.testCC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestCC@384ad17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteC.TestCC@384ad17b]" started-at="2023-12-31T16:30:24 IST" name="quit" finished-at="2023-12-31T16:30:24 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="init(org.testng.ITestContext,org.testng.ITestResult)[pri:0, instance:suiteC.TestCC@384ad17b]" started-at="2023-12-31T16:30:24 IST" name="init" finished-at="2023-12-31T16:30:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1ca25c47]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestCC.testCC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestCC@384ad17b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testCC(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:suiteC.TestCC@384ad17b]" started-at="2023-12-31T16:30:24 IST" name="testCC" data-provider="datasuiteC" finished-at="2023-12-31T16:30:26 IST" duration-ms="2008" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[U1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[P1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCC -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteC.TestCC@384ad17b]" started-at="2023-12-31T16:30:26 IST" name="quit" finished-at="2023-12-31T16:30:26 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suiteC.TestCC -->
+    </test> <!-- TestCC -->
+  </suite> <!-- SuiteC -->
+</testng-results>
