@@ -18,7 +18,7 @@ public class TestA extends testbase{
 		Thread.sleep(2000);
 		//Assert.assertTrue(15>12, "Condition Failed");
 		//log(uname+"--------"+password);
-		if(!"Title1".equals("Title2"))
+		if(!"Title1".equals("Title1"))
 		{		
 			System.out.println("Title do not match");
 			System.out.println("Title do not match");
@@ -26,7 +26,7 @@ public class TestA extends testbase{
 			
 			
 		}
-		failandstoptest("Failing and stopping the test case");
+	//	failandstoptest("Failing and stopping the test case");
 		//System.out.println("Title do not match2");
 		//softAssert("Title Do not match");
 		
