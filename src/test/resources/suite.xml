@@ -10,8 +10,8 @@
 </groups>
 
 <parameter name="browser" value="chrome"></parameter>  
-<parameter name="browsergroup1" value="chrome"></parameter>  
-<parameter name="browsergroup2" value="ie"></parameter> 
+<parameter name="browserGroup1" value="chrome"></parameter>  
+<parameter name="browserGroup2" value="ie"></parameter> 
 <listeners>
 	<listener class-name="listener.MyTestListener"></listener>
 </listeners>

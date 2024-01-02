@@ -349,7 +349,7 @@
 	Title Do not match,
 	Failing and stopping the test case
 	at testSuiteBase.testbase.failandstoptest(testbase.java:67)
-	at suiteA.TestA.testA(TestA.java:28)
+	at suiteA.TestA.testA(TestA.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -365,7 +365,7 @@
 	Title Do not match,
 	Failing and stopping the test case
 	at testSuiteBase.testbase.failandstoptest(testbase.java:67)
-	at suiteA.TestA.testA(TestA.java:28)
+	at suiteA.TestA.testA(TestA.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -802,10 +802,6 @@
                 <span class="method-in-group-name">testB</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testCC</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
               <span class="test-group-name">sanity</span>
@@ -875,12 +871,8 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">browserGroup2</span>
+              <span class="test-group-name">browsergroup2</span>
               <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">testB</span>
-                <br/>
-              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">testCC</span>
                 <br/>
@@ -971,11 +963,11 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testA')
 data.setCell(0, 2, 'suiteA.TestA')
-data.setCell(0, 3, 2023);
+data.setCell(0, 3, 2022);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testA')
 data.setCell(1, 2, 'suiteA.TestA')
-data.setCell(1, 3, 2012);
+data.setCell(1, 3, 2006);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testAA')
 data.setCell(2, 2, 'suiteA.TestAA')
@@ -1010,21 +1002,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testBB')
-data.setCell(0, 2, 'suiteB.TestBB')
-data.setCell(0, 3, 2016);
+data.setCell(0, 1, 'testB')
+data.setCell(0, 2, 'suiteB.TestB')
+data.setCell(0, 3, 2017);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testB')
 data.setCell(1, 2, 'suiteB.TestB')
-data.setCell(1, 3, 2014);
+data.setCell(1, 3, 2015);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testBB')
 data.setCell(2, 2, 'suiteB.TestBB')
-data.setCell(2, 3, 2010);
+data.setCell(2, 3, 2015);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testB')
-data.setCell(3, 2, 'suiteB.TestB')
-data.setCell(3, 3, 2007);
+data.setCell(3, 1, 'testBB')
+data.setCell(3, 2, 'suiteB.TestBB')
+data.setCell(3, 3, 2008);
 window.suiteTableData['SuiteB']= { tableData: data, tableDiv: 'times-div-SuiteB'}
 return data;
 }
@@ -1061,11 +1053,11 @@ data.setCell(1, 3, 2013);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCC')
 data.setCell(2, 2, 'suiteC.TestCC')
-data.setCell(2, 3, 2008);
+data.setCell(2, 3, 2012);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testC')
 data.setCell(3, 2, 'suiteC.TestC')
-data.setCell(3, 3, 2004);
+data.setCell(3, 3, 2001);
 window.suiteTableData['SuiteC']= { tableData: data, tableDiv: 'times-div-SuiteC'}
 return data;
 }
@@ -1154,40 +1146,40 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testA(chrome, U1, P1)</span>
-                <span class="method-start">160 ms</span>
+                <span class="method-start">161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">2190 ms</span>
+                <span class="method-start">2193 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@1c98290c, [TestResult name={null} status=CREATED method=TestA.testA(java.lang....)</span>
-                <span class="method-start">2372 ms</span>
+                <span class="method-start">2379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testA(Mozilla, U1, P1)</span>
-                <span class="method-start">2372 ms</span>
+                <span class="method-start">2379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">4388 ms</span>
+                <span class="method-start">4390 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">suiteA.TestAA</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testAA(Firefox, U1, P1)</span>
-                <span class="method-start">4432 ms</span>
+                <span class="method-start">4431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@51df223b, [TestResult name={null} status=CREATED method=TestAA.testAA(java.lan...)</span>
-                <span class="method-start">4432 ms</span>
+                <span class="method-start">4431 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">4435 ms</span>
+                <span class="method-start">4434 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testAA(Ie, U1, P1)</span>
@@ -1220,46 +1212,46 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">2010 ms</span>
+                <span class="method-start">2017 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">init(org.testng.TestRunner@4204541c, [TestResult name={null} status=CREATED method=TestB.testB(java.lang....)</span>
-                <span class="method-start">2027 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testB(chrome, U1, P1)</span>
-                <span class="method-start">2028 ms</span>
+                <span class="method-start">2039 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init(org.testng.TestRunner@4204541c, [TestResult name={null} status=CREATED method=TestB.testB(java.lang....)</span>
+                <span class="method-start">2039 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">4044 ms</span>
+                <span class="method-start">4058 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">suiteB.TestBB</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@60fa3495, [TestResult name={null} status=CREATED method=TestBB.testBB(java.lan...)</span>
-                <span class="method-start">4064 ms</span>
+                <span class="method-start">4093 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBB(chrome, U1, P1)</span>
-                <span class="method-start">4064 ms</span>
+                <span class="method-start">4093 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">6076 ms</span>
+                <span class="method-start">6110 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">init(org.testng.TestRunner@60fa3495, [TestResult name={null} status=CREATED method=TestBB.testBB(java.lan...)</span>
-                <span class="method-start">6086 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBB(mozilla, U1, P1)</span>
-                <span class="method-start">6088 ms</span>
+                <span class="method-start">6121 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init(org.testng.TestRunner@60fa3495, [TestResult name={null} status=CREATED method=TestBB.testBB(java.lan...)</span>
+                <span class="method-start">6121 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">8106 ms</span>
+                <span class="method-start">8131 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -1270,56 +1262,56 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">suiteC.TestC</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testC(chrome, U1, P1)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@29a60c27, [TestResult name={null} status=CREATED method=TestC.testC(java.lang....)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testC(chrome, U1, P1)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">2005 ms</span>
+                <span class="method-start">2004 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@29a60c27, [TestResult name={null} status=CREATED method=TestC.testC(java.lang....)</span>
-                <span class="method-start">2024 ms</span>
+                <span class="method-start">2029 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testC(mozilla, U1, P1)</span>
-                <span class="method-start">2025 ms</span>
+                <span class="method-start">2029 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">4040 ms</span>
+                <span class="method-start">4044 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">suiteC.TestCC</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testCC(null, U1, P1)</span>
-                <span class="method-start">4058 ms</span>
+                <span class="method-start">4069 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@1ca25c47, [TestResult name={null} status=CREATED method=TestCC.testCC(java.lan...)</span>
-                <span class="method-start">4058 ms</span>
+                <span class="method-start">4069 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">6076 ms</span>
+                <span class="method-start">6086 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">init(org.testng.TestRunner@1ca25c47, [TestResult name={null} status=CREATED method=TestCC.testCC(java.lan...)</span>
-                <span class="method-start">6088 ms</span>
+                <span class="method-start">6108 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCC(mozilla, U1, P1)</span>
-                <span class="method-start">6089 ms</span>
+                <span class="method-start">6109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">8100 ms</span>
+                <span class="method-start">8123 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
