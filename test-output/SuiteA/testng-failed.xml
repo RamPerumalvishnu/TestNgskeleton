@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [SuiteA]" guice-stage="DEVELOPMENT">
-  <parameter name="browsergroup1" value="chrome"/>
-  <parameter name="browsergroup2" value="ie"/>
+  <parameter name="browserGroup1" value="chrome"/>
+  <parameter name="browserGroup2" value="ie"/>
   <parameter name="browser" value="chrome"/>
   <parameter name="browsers" value="chrome,mozilla"/>
   <listeners>
