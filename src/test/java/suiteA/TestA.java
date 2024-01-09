@@ -23,9 +23,13 @@ public class TestA extends testbase{
 			System.out.println("Title do not match");
 			System.out.println("Title do not match");
 			softAssert("Title Do not match");
+<<<<<<< HEAD
 
 			System.out.println("Editing the test case A");
 			
+=======
+			System.out.println("Adding frm branch X");
+>>>>>>> BranchX
 			
 		}
 	//	failandstoptest("Failing and stopping the test case");
