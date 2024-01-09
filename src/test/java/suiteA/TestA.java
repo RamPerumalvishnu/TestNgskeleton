@@ -28,7 +28,7 @@ public class TestA extends testbase{
 			System.out.println("Editing the test case A");
 			
 
-			System.out.println("Adding frm branch X");
+			System.out.println("Adding frm branch A");
 
 			
 		}
