@@ -13,6 +13,8 @@ public class TestB extends testbase{
 		Thread.sleep(2000);
 		log(uname+"--------"+password);
 		log(uname+"--------"+password);
+
+		System.out.println("Print ln in testb");
 	}
 	
 
