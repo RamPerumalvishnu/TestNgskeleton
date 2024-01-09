@@ -31,6 +31,7 @@ public class ExtentManager {
 			sparkreporter.config().setTheme(Theme.STANDARD);
 			sparkreporter.config().setEncoding("utf-8");
 			reports.attachReporter(sparkreporter);
+			
 		}
 		return reports;	
 		

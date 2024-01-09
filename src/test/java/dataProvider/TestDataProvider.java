@@ -85,9 +85,11 @@ public class TestDataProvider {
 	public Object[][] datasuiteC(ITestContext con,Method m)
 	{
 	
-		Object data[][]=null;
+		
 		String browsers[]=con.getCurrentXmlTest().getParameter("browsers").split(",");
+		Object data[][]=null;
 		System.out.println("Data for Suite C " +browsers.length);
+		System.out.println("Browser zero is " +"---"+browsers[1]);
 		if(m.getName().equalsIgnoreCase("TestC"))
 		{
 			data=new Object[2][3];
