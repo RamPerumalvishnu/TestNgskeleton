@@ -15,7 +15,11 @@ public class TestB extends testbase{
 
 		log(uname+"--------"+password);
 
+<<<<<<< HEAD
 		System.out.println("Removing testb ");
+=======
+		System.out.println("Print ln in testb");
+>>>>>>> refs/remotes/origin/master
 
 	}
 	
