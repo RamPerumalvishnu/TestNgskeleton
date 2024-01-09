@@ -15,7 +15,7 @@ public class TestB extends testbase{
 
 		log(uname+"--------"+password);
 
-		System.out.println("Print ln in testb");
+	
 
 	}
 	
