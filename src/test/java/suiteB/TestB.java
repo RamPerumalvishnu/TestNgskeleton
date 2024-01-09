@@ -12,13 +12,11 @@ public class TestB extends testbase{
 		log("Testing Started");
 		Thread.sleep(2000);
 		log(uname+"--------"+password);
-<<<<<<< HEAD
-		
-=======
+
 		log(uname+"--------"+password);
 
-		System.out.println("Print ln in testb");
->>>>>>> BranchX
+		System.out.println("Removing testb ");
+
 	}
 	
 
